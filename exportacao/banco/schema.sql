@@ -1,4 +1,4 @@
--- Estrutura do banco do app Karanu (My Sommelier), lida do banco real AGORA, em 2026-11-19 22:57:07 (horário de Brasília), no clique do botão.
+-- Estrutura do banco do app Karanu (My Sommelier), lida do banco real AGORA, em 2026-11-19 23:00:41 (horário de Brasília), no clique do botão.
 -- Origem: MySQL 8.3.0. Gerado do information_schema (o Mitra só aceita SELECT; SHOW CREATE não roda).
 -- Ordem: tabelas sem dependência primeiro, depois as com chave estrangeira, e as visões por último.
 -- PACOTE_PROJETO e PACOTE_EXPORTACOES entram só com a estrutura (registro dos pacotes e das exportações).

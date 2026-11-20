@@ -2,7 +2,7 @@
   "app": "Karanu (My Sommelier)",
   "projetoMitra": 67509,
   "tipo": "pacote gerado na hora",
-  "dadosGeradosEm": "2026-11-19T22:57:07",
+  "dadosGeradosEm": "2026-11-19T23:00:41",
   "codigoGeradoEm": "2026-11-16T09:58:07",
   "versaoCodigo": "63049f1",
   "banco": {
@@ -57,7 +57,7 @@
     {
       "caminho": "banco/dados.sql",
       "tamanho": 18978,
-      "sha256": "f980840fd4b79201c604db742f856b9ce304852a6c0bd00e5951da14065d663e"
+      "sha256": "e9b580ab77bd7c23734d18e159a14b1a8d60496390196cfe5237c2f434c19c18"
     },
     {
       "caminho": "banco/estrutura.json",
@@ -67,7 +67,7 @@
     {
       "caminho": "banco/schema.sql",
       "tamanho": 15239,
-      "sha256": "1bf45d5145d9a8665f7101bbbae4113948eed252eddc2360c32f0e818335b19f"
+      "sha256": "74ef2f5ce2e5b6855c5c1c84311dbcf81de68089a2bcc6a8b090a83175dd66e8"
     },
     {
       "caminho": "codigo/.gitkeep",
@@ -537,7 +537,7 @@
     {
       "caminho": "EXPORT_AVISOS.md",
       "tamanho": 756,
-      "sha256": "410d25b4d045b4dab01d7d0596df19e2114a46dc74cb7cd3d3039eeafe193eea"
+      "sha256": "52b07eb9be1be13abac6c46341c6ea1a6fe4dbd9bdd612b2f5b42f266bcd68d8"
     },
     {
       "caminho": "funcoes/001-geminiGerar.json",
@@ -867,7 +867,7 @@
     {
       "caminho": "README.md",
       "tamanho": 1501,
-      "sha256": "37f9178dca50e37bdfe3fe7869307d0ab60209c6d71fba946a84bf9dfde5cb6f"
+      "sha256": "487024fe851a2da6af9f1fa19d09cda374279d9c45782617c7b4010ff984affc"
     }
   ]
 }
