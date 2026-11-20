@@ -1,4 +1,4 @@
--- Dados das tabelas do app, lidos AGORA, em 2026-11-19 22:55:37 (horário de Brasília). Rodar depois de schema.sql.
+-- Dados das tabelas do app, lidos AGORA, em 2026-11-19 22:57:07 (horário de Brasília). Rodar depois de schema.sql.
 -- Pais antes dos filhos; checagem de chave estrangeira LIGADA. Datas e horas são texto AAAA-MM-DDTHH:MM:SS (VARCHAR(19)), sem conversão. NULL continua NULL.
 
 SET NAMES utf8mb4;

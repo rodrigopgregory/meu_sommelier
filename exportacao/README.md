@@ -1,6 +1,6 @@
 # Pacote completo do Karanu (My Sommelier)
 
-  - **Dados gerados agora:** 2026-11-19 22:55:37 (horário de Brasília), no clique do botão.
+  - **Dados gerados agora:** 2026-11-19 22:57:07 (horário de Brasília), no clique do botão.
   - **Código gerado em:** 2026-11-16 09:58:07 (versão 63049f1).
 
   ## Gerado agora (do banco e do Mitra no momento do clique)
