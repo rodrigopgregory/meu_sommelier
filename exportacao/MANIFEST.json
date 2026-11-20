@@ -1,0 +1,873 @@
+{
+  "app": "Karanu (My Sommelier)",
+  "projetoMitra": 67509,
+  "tipo": "pacote gerado na hora",
+  "dadosGeradosEm": "2026-11-19T22:55:37",
+  "codigoGeradoEm": "2026-11-16T09:58:07",
+  "versaoCodigo": "63049f1",
+  "banco": {
+    "origem": "MySQL 8.3.0",
+    "ordemDeCriacao": [
+      "ADEGAS",
+      "CONFIG",
+      "EXPORT_LEVE",
+      "FONTES",
+      "PACOTE_EXPORTACOES",
+      "PACOTE_PROJETO",
+      "PREFERENCIAS",
+      "SOMMELIER_MENSAGENS",
+      "TIPOS_VINHO",
+      "VINHOS",
+      "SAFRAS",
+      "ALERTAS",
+      "AVALIACOES_EXTERNAS",
+      "AVALIACOES_PESSOAIS",
+      "MOVIMENTACOES",
+      "SAFRA_SERVICO"
+    ],
+    "visoes": [
+      "VW_SAFRAS"
+    ]
+  },
+  "linhasPorTabela": {
+    "ADEGAS": 2,
+    "CONFIG": 3,
+    "FONTES": 2,
+    "PREFERENCIAS": 1,
+    "SOMMELIER_MENSAGENS": 24,
+    "TIPOS_VINHO": 7,
+    "VINHOS": 10,
+    "SAFRAS": 11,
+    "ALERTAS": 7,
+    "AVALIACOES_EXTERNAS": 5,
+    "AVALIACOES_PESSOAIS": 3,
+    "MOVIMENTACOES": 21,
+    "SAFRA_SERVICO": 3
+  },
+  "totalLinhas": 99,
+  "tabelasSemDados": [
+    "PACOTE_PROJETO",
+    "PACOTE_EXPORTACOES",
+    "EXPORT_LEVE"
+  ],
+  "fotos": 0,
+  "usuarios": 3,
+  "avisos": 4,
+  "arquivos": [
+    {
+      "caminho": "banco/dados.sql",
+      "tamanho": 18978,
+      "sha256": "87b4b006c030c42ac9b490d5dcc8193e6184e0c2aa3d46665f11633dda90a71b"
+    },
+    {
+      "caminho": "banco/estrutura.json",
+      "tamanho": 51496,
+      "sha256": "d8429659019f9b1e0b4d749319ba817e4d397fabdefe7f8671a570071fab2ab3"
+    },
+    {
+      "caminho": "banco/schema.sql",
+      "tamanho": 15239,
+      "sha256": "0a2d451df4e061bd655fa7be0703a2267011d87ad3515b393a26d6c04ccb2ea5"
+    },
+    {
+      "caminho": "codigo/.gitkeep",
+      "tamanho": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "caminho": "codigo/backend/.env.example",
+      "tamanho": 158,
+      "sha256": "c8a89613928812a2006150b0ca172f9e291d0a39d322b98345d9fae6154247d7"
+    },
+    {
+      "caminho": "codigo/backend/.gitignore",
+      "tamanho": 99,
+      "sha256": "c0a6f74495de7090e0deac3ee5a8e2a16464f2408ad7b4086a2849e242138f48"
+    },
+    {
+      "caminho": "codigo/backend/package-lock.json",
+      "tamanho": 1409,
+      "sha256": "162353824580b91744c60ce789c9c983d23c033096a3a295bf46fb9d5c520c91"
+    },
+    {
+      "caminho": "codigo/backend/package.json",
+      "tamanho": 140,
+      "sha256": "0ae4f60094833ce07a5b151397b79e047243f33a81179ed91c33f0467cfa5ba0"
+    },
+    {
+      "caminho": "codigo/backend/scripts/01-tabelas.mjs",
+      "tamanho": 4197,
+      "sha256": "e3d11d8806f0433191290cf2afa37b7db5e9fdef025fcd5a6e16e133ac46640c"
+    },
+    {
+      "caminho": "codigo/backend/scripts/02-visao.mjs",
+      "tamanho": 1598,
+      "sha256": "7bdfcf75b620f47ede0a7c82429c133608deb1fa14009691a5471bbe2da7c04d"
+    },
+    {
+      "caminho": "codigo/backend/scripts/03-funcoes.mjs",
+      "tamanho": 55313,
+      "sha256": "9bb59274f54a0f38dbf8af53a5b6854fddc304d4019a123f0909d27aea46a8f0"
+    },
+    {
+      "caminho": "codigo/backend/scripts/04-dados-exemplo.mjs",
+      "tamanho": 7036,
+      "sha256": "9b644efed98d77aa2b07d2144049cd9d08bb11d1d5fabeff893b8ba2eae808b0"
+    },
+    {
+      "caminho": "codigo/backend/scripts/05-rotina-perfil.mjs",
+      "tamanho": 1380,
+      "sha256": "57575067d865a9fcf4f917a807bdc8be426d0c0cccff3ee65bee3ab88b64e435"
+    },
+    {
+      "caminho": "codigo/backend/scripts/06-servico.mjs",
+      "tamanho": 1004,
+      "sha256": "46e7a05783cbedc89d39909ecb4b664921544175d6a33237d295c21788c1a440"
+    },
+    {
+      "caminho": "codigo/backend/scripts/07-preferencias.mjs",
+      "tamanho": 938,
+      "sha256": "8fe79bf276f541030e90a90417d9405c24d6d10294b19d05a18a7c5e3ee99858"
+    },
+    {
+      "caminho": "codigo/backend/scripts/08-pacote.mjs",
+      "tamanho": 37904,
+      "sha256": "ed8c118af183777bf5f7f1f8e8aad4961e19e4c438367ea04952ef7f4f8d61a2"
+    },
+    {
+      "caminho": "codigo/backend/scripts/09-preferencias-gosto.mjs",
+      "tamanho": 1261,
+      "sha256": "0caddc99247dbe8bb16076a61ed369c44b056b4696b4c9234e428094931aef73"
+    },
+    {
+      "caminho": "codigo/backend/scripts/10-alertas-arquivado.mjs",
+      "tamanho": 1139,
+      "sha256": "dd09592f9d0d0c71676d0616e4f6e7dcb36ad8dd7548543a9446262008b261fc"
+    },
+    {
+      "caminho": "codigo/backend/scripts/11-pacote-exportacoes.mjs",
+      "tamanho": 1578,
+      "sha256": "6e3bb10e8162fb4b903dc49b69e6a0433b6cf329323eb13cc827a1e45f1bde9f"
+    },
+    {
+      "caminho": "codigo/backend/scripts/sf/pacoteCodigoPedir.js",
+      "tamanho": 2841,
+      "sha256": "3b5a226cbc9bbdf7a46fd7bb5bb5647d04af6bdcdf8c9a18016f27d478820eb6"
+    },
+    {
+      "caminho": "codigo/backend/scripts/sf/pacoteGerar.js",
+      "tamanho": 25839,
+      "sha256": "168a652d03e69538b914e0d8ab0cc190db17ca6063177fea909ef3b1083f8df2"
+    },
+    {
+      "caminho": "codigo/backend/scripts/teste-ia.mjs",
+      "tamanho": 1860,
+      "sha256": "515a8658b02da8788cf8e4e9831fcdec96c6d42b3c21e080b63c1319ce46aaf3"
+    },
+    {
+      "caminho": "codigo/backend/scripts/teste-regras.mjs",
+      "tamanho": 6740,
+      "sha256": "c283a843185e8d54110fed6283ca76cb211d97b6b85a630c66844476e554eb3e"
+    },
+    {
+      "caminho": "codigo/backend/setup-gemini.mjs",
+      "tamanho": 2597,
+      "sha256": "80846dfb7bc6e7e917fe8405ae92f77b2e409c623d283c95d9bf3c146cd11476"
+    },
+    {
+      "caminho": "codigo/ESCOPO.md",
+      "tamanho": 15545,
+      "sha256": "ac6512a2af0f358d486a35d7f492e727fea456105d73354df5d2a358f8515157"
+    },
+    {
+      "caminho": "codigo/frontend/.env.example",
+      "tamanho": 103,
+      "sha256": "bf34665c7bdae981fc3b3bec8c94cf249536ab74d36a8fdfcf4fc04e019ad99d"
+    },
+    {
+      "caminho": "codigo/frontend/.gitignore",
+      "tamanho": 277,
+      "sha256": "d50ab07e11fa4bf3b1c7c3312e1d7baeab56cca756832ccf40476823ad2a38b7"
+    },
+    {
+      "caminho": "codigo/frontend/eslint.config.js",
+      "tamanho": 1865,
+      "sha256": "971321bd67bc74009606052b62db4499e88b389500178679babcf30be5f2e085"
+    },
+    {
+      "caminho": "codigo/frontend/index.html",
+      "tamanho": 1504,
+      "sha256": "74f3db3e400c14775e49efa72a850218daa7c4d8b6d6dce47856323d13d80b38"
+    },
+    {
+      "caminho": "codigo/frontend/package-lock.json",
+      "tamanho": 158153,
+      "sha256": "19c5b8b967708cf9932ff9c5cf7b17b16821b0d32ca722fe7e1a3295ed5a9d04"
+    },
+    {
+      "caminho": "codigo/frontend/package.json",
+      "tamanho": 987,
+      "sha256": "f96c20eff415fd48c1924fb07570bf6cc98f2eeacaae37b5b7575ab12bc96b63"
+    },
+    {
+      "caminho": "codigo/frontend/public/apple-touch-icon.png",
+      "tamanho": 6915,
+      "sha256": "e5bfe68a7770a46a8264b2e0071056bd5fdd80bcccbf286542d4a9087ce33aaa"
+    },
+    {
+      "caminho": "codigo/frontend/public/favicon.png",
+      "tamanho": 3385,
+      "sha256": "8e3b4f5b095e96b0f965f0f75eacc4d3437b925fb6ffe24745635e1f999352cf"
+    },
+    {
+      "caminho": "codigo/frontend/public/favicon.svg",
+      "tamanho": 587,
+      "sha256": "f600ecadb49c6802bfd81de5604beb9ef3fffd6ca695bf7608f009c4c2206b01"
+    },
+    {
+      "caminho": "codigo/frontend/public/marca/karanu-a-azul.png",
+      "tamanho": 10713,
+      "sha256": "4be8b9164d0136f4d8f7ab0cf9afae98e7f8c37a1e7faf8f05464ceb28d085b5"
+    },
+    {
+      "caminho": "codigo/frontend/public/marca/karanu-a-bordo.png",
+      "tamanho": 10594,
+      "sha256": "c69e791f41b56492b2615b750368ca2b75e4d89d4bb2a254661ec2f754154547"
+    },
+    {
+      "caminho": "codigo/frontend/public/marca/karanu-assinatura-azul.png",
+      "tamanho": 25395,
+      "sha256": "1800af31a1d4b7cd2865569a768f3220ba1de88cda348b279c7cc3db133fdf98"
+    },
+    {
+      "caminho": "codigo/frontend/public/marca/karanu-assinatura-bordo.png",
+      "tamanho": 25007,
+      "sha256": "2ffa4e002f641fe8db31b68774b459a185a5c910bc7f4641d74a8b66170a3f80"
+    },
+    {
+      "caminho": "codigo/frontend/public/marca/karanu-b-azul.png",
+      "tamanho": 12821,
+      "sha256": "54fbb9fd8c26ef42a9b51eea96f5bc5213d6477adb82394214a3326d3cb3b3f2"
+    },
+    {
+      "caminho": "codigo/frontend/public/marca/karanu-b-bordo.png",
+      "tamanho": 12940,
+      "sha256": "47fc272b2ad72736f75dfdafed3a00dd28147c1fec589cbae038ba0e50087438"
+    },
+    {
+      "caminho": "codigo/frontend/README.md",
+      "tamanho": 2628,
+      "sha256": "2428c4c18f14c5809f8e18e24bb7a1a4c7ccedf238406d9bd901364e47ae4206"
+    },
+    {
+      "caminho": "codigo/frontend/src/App.tsx",
+      "tamanho": 1604,
+      "sha256": "ccbfd55573079dc2b4476b1bcff5167e17d57cefa24cc657f3f79496695fdaf0"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/BeberLogoDialog.tsx",
+      "tamanho": 2126,
+      "sha256": "51c7f1cc0b52bad2842aedbb84cf9b57ca5b8fb3456b3003368df33cc4598df4"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/Campos.tsx",
+      "tamanho": 877,
+      "sha256": "d6d18df0c7ce4b375d47dfe596bc0bc410e0ec44b95c92c822acbf170eafb4ea"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ContadorGarrafas.tsx",
+      "tamanho": 2483,
+      "sha256": "0c58318bc63d97b1f7c62c67136dd35e58561c94b89017835c2ba6c14edb839e"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/Layout.tsx",
+      "tamanho": 6764,
+      "sha256": "17d86c42c9f48ba1793c826a411ec6a919b0582695530875e490cb63c3e3ef5f"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/PageHeader.tsx",
+      "tamanho": 590,
+      "sha256": "22159acb9016deb60c324400efac5f0b881f563fdbf999893c3529974ead33bb"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/StatusBadge.tsx",
+      "tamanho": 366,
+      "sha256": "f01802362aa3bc3fa7dc8cb42f3fedd29c578b7189231a305cc2b4f4be637d3d"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ToastContext.tsx",
+      "tamanho": 710,
+      "sha256": "db6db8a2bbb922e7388e04147b2aed69ee092cee37853cc109d23bc3df117f1c"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/Badge.tsx",
+      "tamanho": 1506,
+      "sha256": "c6d788379397eec3020813ca2a4c6cbddc925d348546812c353e690fdbac4103"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/Button.tsx",
+      "tamanho": 2283,
+      "sha256": "042fa7531137d75f7fa9fb7bfc8478c9db9ac412574c256005c72b8d4a5db42e"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/Card.tsx",
+      "tamanho": 2130,
+      "sha256": "122708b2b87277a389fc0e673174a55633b90fb95bda805d7eff8c6f6e4fdccd"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/Chart.tsx",
+      "tamanho": 58685,
+      "sha256": "677d8faeda520b9fb5ef2bedd2f5e0729eb4776e1032de0eac5fc643c5b562c1"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/Checkbox.tsx",
+      "tamanho": 1575,
+      "sha256": "fb7d4670312888f63fb180887baee93aff7081a74dafa541527cf60820f34b5f"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/ConfirmDialog.tsx",
+      "tamanho": 1356,
+      "sha256": "bf3c9fcddcc2deae511d9a0e333d85f7364cfea3b7662a590cc34ea4748fc584"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/DatePicker.tsx",
+      "tamanho": 7932,
+      "sha256": "fc275e85f1b0f02232bcac239b0bf81d07e19153b14997baaba316fb188b96aa"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/Input.tsx",
+      "tamanho": 1429,
+      "sha256": "b64218b157bcc738ebba16e37bcd188afee52355c52c85e2588a1016075a0c72"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/Modal.tsx",
+      "tamanho": 2955,
+      "sha256": "56756c57b6627f29f18a761ebe2fcef6002231c5fd165ef60e6caea888b46675"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/MultiSelect.tsx",
+      "tamanho": 9927,
+      "sha256": "3292691e9965a1729a2bbc346aa460303e5381fd969c96c72d3853e00e4af75a"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/Radio.tsx",
+      "tamanho": 2401,
+      "sha256": "cfd42f196cf783ea89146f62527cc4904c24677cf72025b61a149ae9489d3784"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/Select.tsx",
+      "tamanho": 10312,
+      "sha256": "d6a26ad43ee6b8dbbce1b9cc28422c52e0557cb1872fb54fedde46322b3361ed"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/Skeleton.tsx",
+      "tamanho": 6507,
+      "sha256": "a9f46b11d4498195d93a30805fe686f91b25381298526c9003201c161f1d2aee"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/Toast.tsx",
+      "tamanho": 2844,
+      "sha256": "70d09f9764b61da86531bc043651791732c7f7a82092b6ad1faf35029d018de4"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/ui/Tooltip.tsx",
+      "tamanho": 3021,
+      "sha256": "225827c06981bfcd4e48cef473b1f71cf9a115a1b92d77d022118264433f9be5"
+    },
+    {
+      "caminho": "codigo/frontend/src/components/VinhoForm.tsx",
+      "tamanho": 4260,
+      "sha256": "3cd7333dcf1cb2d151633e90a64a8ffe0def573bfd4c571a86b5a581d145f874"
+    },
+    {
+      "caminho": "codigo/frontend/src/hooks/useDrill.ts",
+      "tamanho": 11496,
+      "sha256": "5c73a0dacb3ba8da32b47b625427911ada07590fbda57d5d3a15292db8f9c7fa"
+    },
+    {
+      "caminho": "codigo/frontend/src/hooks/useHighlight.ts",
+      "tamanho": 2115,
+      "sha256": "b2c4417beef04326eb1153f6928aaea0fc6f46f4e2787ceaf9994feacac9eff9"
+    },
+    {
+      "caminho": "codigo/frontend/src/hooks/useToast.ts",
+      "tamanho": 601,
+      "sha256": "697b69a329fe6a857bf4ddb9acdc941f53ccec341452abc18ea604e51942c87d"
+    },
+    {
+      "caminho": "codigo/frontend/src/index.css",
+      "tamanho": 25919,
+      "sha256": "fd1aa9340295726fd5e5e89722a6dd3a825c4c82cfe0248a911ea8ee32456f8b"
+    },
+    {
+      "caminho": "codigo/frontend/src/lib/api.ts",
+      "tamanho": 4496,
+      "sha256": "c3e0521e916230c94ecfe628a4011a7859e84a6b49ca966b9dc427236f1991d2"
+    },
+    {
+      "caminho": "codigo/frontend/src/lib/estilo.ts",
+      "tamanho": 789,
+      "sha256": "2480824d4260c57a00bfe07b8f6165fb70db9dbdb2fb25b3b3c92fa06cbc7f68"
+    },
+    {
+      "caminho": "codigo/frontend/src/lib/exportar.ts",
+      "tamanho": 3186,
+      "sha256": "4c8e0585eef19cdbe6f7447268c29105e5aa246a2097a6f16c928fac8692be3a"
+    },
+    {
+      "caminho": "codigo/frontend/src/lib/logo.ts",
+      "tamanho": 960,
+      "sha256": "34d0497d8830320a3df727db110f9c0b90e848a39688904fd8c5e11d5583d9e7"
+    },
+    {
+      "caminho": "codigo/frontend/src/lib/midia.ts",
+      "tamanho": 2554,
+      "sha256": "1c41d850b68b2aa26180b6ebe4369430d93717d7898fc09c9486f88eb07dd62e"
+    },
+    {
+      "caminho": "codigo/frontend/src/lib/mitra-auth.ts",
+      "tamanho": 2709,
+      "sha256": "ee78ae2c51f79ac866a8fad2a8a5d31ce967ac711317dcd5f265100916467129"
+    },
+    {
+      "caminho": "codigo/frontend/src/lib/preferencias.ts",
+      "tamanho": 2745,
+      "sha256": "930797ad8021404fe513aa18122d50dacaf4c638a8853cb5ed74e9a2b70c22d8"
+    },
+    {
+      "caminho": "codigo/frontend/src/lib/sf.ts",
+      "tamanho": 1462,
+      "sha256": "22ca749d14b61f68e7e91ecf94db33150e4d845590666565f0f24defb1aa5b9d"
+    },
+    {
+      "caminho": "codigo/frontend/src/lib/tema.ts",
+      "tamanho": 1329,
+      "sha256": "5707afd3aef1a9edb02e335b4b0cbdf8c19d0732596302e5009afd95df256bc6"
+    },
+    {
+      "caminho": "codigo/frontend/src/lib/utils.ts",
+      "tamanho": 1192,
+      "sha256": "7aa2cc6b7bc8795354a2b9ea66271fa1cccffe132baa573d03ebbf3b8df3ac55"
+    },
+    {
+      "caminho": "codigo/frontend/src/main.tsx",
+      "tamanho": 479,
+      "sha256": "d11dc94e0da0b6e31c2ca630a6ad4fc49a070bab26cb94c0e3f575beec9a3d0b"
+    },
+    {
+      "caminho": "codigo/frontend/src/pages/AdegaPage.tsx",
+      "tamanho": 11596,
+      "sha256": "a754ed3b5e312bcaae10e4b78db3a23c50b47a3f98d90cb2485caea30908f1f5"
+    },
+    {
+      "caminho": "codigo/frontend/src/pages/AlertasPage.tsx",
+      "tamanho": 6687,
+      "sha256": "5108c777c3931754cc18a2451155ff8f9bca7e34fe009f69f06d320ea36c3f77"
+    },
+    {
+      "caminho": "codigo/frontend/src/pages/ConfiguracoesPage.tsx",
+      "tamanho": 19019,
+      "sha256": "c15714e0aef63ad13bb80533f2f7a1edefe8a4d70e12bce54ee7ce7c804b78cd"
+    },
+    {
+      "caminho": "codigo/frontend/src/pages/FontesPage.tsx",
+      "tamanho": 6596,
+      "sha256": "ba2335730782e638e6ad1078c3995e2f4a18bb9c33be662503871600e7216e18"
+    },
+    {
+      "caminho": "codigo/frontend/src/pages/InicioPage.tsx",
+      "tamanho": 11203,
+      "sha256": "511f51a822835a76449947b7d4fa2f704e81c94f4d52d722a318f95cd122c264"
+    },
+    {
+      "caminho": "codigo/frontend/src/pages/LoginPage.tsx",
+      "tamanho": 19465,
+      "sha256": "fc1a68799611b388d2e42f8ac553fc2c819dab4d8b6da98229b935550b34b344"
+    },
+    {
+      "caminho": "codigo/frontend/src/pages/NovoVinhoPage.tsx",
+      "tamanho": 16332,
+      "sha256": "9313895f4020eb412cc00306d738d32d3e2689842abc82400ea3f4a6b87e57d4"
+    },
+    {
+      "caminho": "codigo/frontend/src/pages/SommelierPage.tsx",
+      "tamanho": 12251,
+      "sha256": "e03e5e9cbc41da50617bc771f391741cdc998e20846867bd23c818396cc1e95f"
+    },
+    {
+      "caminho": "codigo/frontend/src/pages/VinhoPage.tsx",
+      "tamanho": 38532,
+      "sha256": "de2f01d67c646e2f1d6d7dc180706f14929bf2f0ecafc80764253c8d7f282d0b"
+    },
+    {
+      "caminho": "codigo/frontend/tsconfig.app.json",
+      "tamanho": 760,
+      "sha256": "185c585aa92b2cbe0df1918e999d9a6bc4fec6762a6d80de7d2d155d56369aed"
+    },
+    {
+      "caminho": "codigo/frontend/tsconfig.json",
+      "tamanho": 126,
+      "sha256": "ad28d132ee48d6e23917cf5827cace785d0fc01a44ca68b0dda51cc8c3fd3f52"
+    },
+    {
+      "caminho": "codigo/frontend/tsconfig.node.json",
+      "tamanho": 679,
+      "sha256": "a6d49d645590cac21c235a0548605d867321b2e1750e99176d2153d702dfa842"
+    },
+    {
+      "caminho": "codigo/frontend/vite.config.ts",
+      "tamanho": 481,
+      "sha256": "0a2baef922a57def7d8f3f8969ef434ce0de3b240b8deaf07fd174de1fefd205"
+    },
+    {
+      "caminho": "codigo/README.md",
+      "tamanho": 14034,
+      "sha256": "c0d458db68797b2854c4ef68e846a05ad7e0a8086e1fdea5528e194786d20838"
+    },
+    {
+      "caminho": "DEPENDENCIAS_MITRA.md",
+      "tamanho": 18129,
+      "sha256": "fc19b94c4a96fab88c341c6275b53c0f27f00db1d057ad8ee52e877a2d10e78a"
+    },
+    {
+      "caminho": "DIFF_FUNCOES.md",
+      "tamanho": 539,
+      "sha256": "2294647c3b1a31e27cc982436348249d2b3e400baa194ba38d9e4f52ffe0455b"
+    },
+    {
+      "caminho": "EXPORT_AVISOS.md",
+      "tamanho": 756,
+      "sha256": "836e481bef062232e20c02f41d4dd413c4f48a1d5a040553531b95d2faa9f7bd"
+    },
+    {
+      "caminho": "funcoes/001-geminiGerar.json",
+      "tamanho": 124,
+      "sha256": "eca3fa81854f9a8f67ae55c35ccea1ad63c0665d160b2301a24d44c1f3b9d308"
+    },
+    {
+      "caminho": "funcoes/020-geminiGerarLeve.json",
+      "tamanho": 127,
+      "sha256": "9596c45910ab0178f41340f53d72cc17c8471fb625fe9829b0d6caa22b806fd7"
+    },
+    {
+      "caminho": "funcoes/021-inicioResumo.sql",
+      "tamanho": 3164,
+      "sha256": "06393bc1d177bad5e7f08e3cb95d8277705b36c006013e6c2a9f85349e5a3512"
+    },
+    {
+      "caminho": "funcoes/022-dominios.sql",
+      "tamanho": 1051,
+      "sha256": "480b02b6ac0809755e5dabf927874a2b6a4881fd16caf305812b6b8d09317028"
+    },
+    {
+      "caminho": "funcoes/023-adegaListar.sql",
+      "tamanho": 1648,
+      "sha256": "24656f52d209008642be9aa2d8dd9ad41f90f9bec1875224774a76ccde831aee"
+    },
+    {
+      "caminho": "funcoes/024-vinhoFicha.sql",
+      "tamanho": 2029,
+      "sha256": "51cb194b558673aecb51fbe1d28cd612b2e576fd981b428eb52ff12af4422e27"
+    },
+    {
+      "caminho": "funcoes/025-vinhoProcurarIgual.sql",
+      "tamanho": 205,
+      "sha256": "d878ab443b17b99ecf08d3c5b1e2acb431748f0cb5134def825bf935d9195823"
+    },
+    {
+      "caminho": "funcoes/026-vinhoCriar.sql",
+      "tamanho": 1393,
+      "sha256": "c216d097fcb49cdaf5bc4609cf901ebd2bb3855cf1cec4b894dd5b0cdeb44256"
+    },
+    {
+      "caminho": "funcoes/027-vinhoUltimo.sql",
+      "tamanho": 62,
+      "sha256": "bbccffde14c6927d37fb549663d9029d0038795ee7e091b8a8d4d61233f339c6"
+    },
+    {
+      "caminho": "funcoes/028-vinhoAtualizar.sql",
+      "tamanho": 505,
+      "sha256": "ec0615e8c7676934dcb0fa5a37ad0062ccd0d1b77e5d8302c2d52327f8960814"
+    },
+    {
+      "caminho": "funcoes/029-vinhoExcluir.sql",
+      "tamanho": 64,
+      "sha256": "b34f95c9b0e6c7c41cc26df3b73f899778eb51c31d65f4e0bded60753134648f"
+    },
+    {
+      "caminho": "funcoes/030-safraCriar.sql",
+      "tamanho": 588,
+      "sha256": "4ca52b6545ca245e2ec4a798ade9667506b7b36501ef95c27886fafb6743bb4b"
+    },
+    {
+      "caminho": "funcoes/031-safraExcluir.sql",
+      "tamanho": 107,
+      "sha256": "46b7446dbdfd5bebdd3d08d2f857489571b21b10bc4cb7d8b3e3f2df0e4a7d1b"
+    },
+    {
+      "caminho": "funcoes/032-safraJanela.sql",
+      "tamanho": 1845,
+      "sha256": "d371eb82fe3247b1bd1b736199e4c83d4eb90a3f863eb4334a6be67e1955266c"
+    },
+    {
+      "caminho": "funcoes/033-movimentar.sql",
+      "tamanho": 1079,
+      "sha256": "10cfe980984758001edb4074c9747d3ecd74ab8035bb8ff8260c5fa537377e30"
+    },
+    {
+      "caminho": "funcoes/034-avaliacaoPessoalCriar.sql",
+      "tamanho": 318,
+      "sha256": "f944306192872c1308762370d8e83ca6b7236a636159bb0dab9000c08a5261be"
+    },
+    {
+      "caminho": "funcoes/035-avaliacaoPessoalExcluir.sql",
+      "tamanho": 155,
+      "sha256": "a355b6eb3d5ab39c13e530592233c3cbd78a095bf93fb434e481a6f58f02c4c1"
+    },
+    {
+      "caminho": "funcoes/036-avaliacaoExternaCriar.sql",
+      "tamanho": 675,
+      "sha256": "6b974aea917282e8832228c6c399664f85c381f9f0b85110432c7262f158572c"
+    },
+    {
+      "caminho": "funcoes/037-avaliacaoExternaExcluir.sql",
+      "tamanho": 155,
+      "sha256": "868c9f8939a77afb518307ad067d0c9c70127737c9616cf30b450821e9ee2c55"
+    },
+    {
+      "caminho": "funcoes/038-fontesListar.sql",
+      "tamanho": 208,
+      "sha256": "c03151e9fe002a0c3bfe951efcb080d8082f284058787b02ecdf08e695bf4629"
+    },
+    {
+      "caminho": "funcoes/039-fonteSalvar.sql",
+      "tamanho": 674,
+      "sha256": "9acff09427d1e4707176555cf0277eb5422d14979d3ec1dc9be08d14d2c18584"
+    },
+    {
+      "caminho": "funcoes/040-fonteExcluir.sql",
+      "tamanho": 64,
+      "sha256": "91e061217eb19f01c0020aad6ba77ad0747adccd2b745a1fee6d49643a0f60c9"
+    },
+    {
+      "caminho": "funcoes/041-alertasListar.sql",
+      "tamanho": 479,
+      "sha256": "51b943609ba4408f24c308f4d247deb1350186ca9f4eda1c24a00a46f2128894"
+    },
+    {
+      "caminho": "funcoes/042-alertasContar.sql",
+      "tamanho": 201,
+      "sha256": "55be0f936b82001c5b634d2be5908f59e7803e6208f793dfac5b7822bc0ed9d5"
+    },
+    {
+      "caminho": "funcoes/043-alertaMarcarLido.sql",
+      "tamanho": 174,
+      "sha256": "93e9d72e569fe4fe3e0836e2cee6157cb45b409040e72929fdcef440d2ba3273"
+    },
+    {
+      "caminho": "funcoes/044-alertasMarcarTodos.sql",
+      "tamanho": 182,
+      "sha256": "6920d80c5e393388955dbd3220a67766aa89d9482838a713bcaaf5e022eb094e"
+    },
+    {
+      "caminho": "funcoes/045-alertasRotina.sql",
+      "tamanho": 578,
+      "sha256": "d322698f44c82c06418fc085e20c48689e3c550cb517d5f89092b3a73c77d978"
+    },
+    {
+      "caminho": "funcoes/046-exportarTudo.sql",
+      "tamanho": 2406,
+      "sha256": "612f90d9e9cdf7436f47bbd22775559bf1a1ae6bf45d6c170e008418f891de4b"
+    },
+    {
+      "caminho": "funcoes/047-fotoKeys.sql",
+      "tamanho": 127,
+      "sha256": "06ace5cbe124eab76ff4a592c74eb4acb6334136999ab5914f56b2b305e982f5"
+    },
+    {
+      "caminho": "funcoes/048-sommelierContexto.sql",
+      "tamanho": 898,
+      "sha256": "f68dc258f4747a8165416162993b75c8266f7b7c05507d8edf0d7ed708242a4c"
+    },
+    {
+      "caminho": "funcoes/049-sommelierGravar.sql",
+      "tamanho": 639,
+      "sha256": "082c27a46231d586fc573b1cb297b79fbeb8b802454d6c8072f640d4f88b6de7"
+    },
+    {
+      "caminho": "funcoes/050-sommelierHistorico.sql",
+      "tamanho": 167,
+      "sha256": "1fd2bc02a02b192f44f1f899542d6448e260b9a9fa250ced5b5d57143748129c"
+    },
+    {
+      "caminho": "funcoes/051-sommelierApagar.sql",
+      "tamanho": 61,
+      "sha256": "1a947bc60e9dae4b180338fe936c17cca34b4696ed267f3aced0f3818703a701"
+    },
+    {
+      "caminho": "funcoes/052-fotosLinks.js",
+      "tamanho": 2738,
+      "sha256": "9d0342feabfbdeeff66fb937112cd0811d7eccb625829736e5c653724f339863"
+    },
+    {
+      "caminho": "funcoes/053-lerRotulo.js",
+      "tamanho": 4938,
+      "sha256": "1508f5f45fba289fa30707ddfe3126af9a363b0c45410f9a7de66a47efacb578"
+    },
+    {
+      "caminho": "funcoes/054-sommelierPerguntar.js",
+      "tamanho": 8293,
+      "sha256": "2b7b4afc2bde7c17123ba6561443ca6ac96845d2d6f1741aa491e30a3ac05f40"
+    },
+    {
+      "caminho": "funcoes/055-geminiGerarReserva1.json",
+      "tamanho": 114,
+      "sha256": "852ca84371f9cb5dc9bb7cb930fbb01b25897350d81be8373df73499df830259"
+    },
+    {
+      "caminho": "funcoes/056-geminiGerarReserva2.json",
+      "tamanho": 124,
+      "sha256": "202bf3f6045d62b4f0957715a2fba8a8cd0e7be7cfb4b9b71b22d41cbd47b927"
+    },
+    {
+      "caminho": "funcoes/057-geminiGerarReserva3.json",
+      "tamanho": 124,
+      "sha256": "2817d6fb256da6b39dba2c470a867648b3d6f98fbe427cba3df89af5f63aa3a8"
+    },
+    {
+      "caminho": "funcoes/058-geminiGerarLeveReserva1.json",
+      "tamanho": 117,
+      "sha256": "0e13b9c7ef9d014dfd592fcde53118deb2f5836e5770acada4981372320405b8"
+    },
+    {
+      "caminho": "funcoes/059-geminiGerarLeveReserva2.json",
+      "tamanho": 127,
+      "sha256": "af02dc8281c414cac1f52ea5765b5554455dd375721e7737621730f1f57fa784"
+    },
+    {
+      "caminho": "funcoes/060-geminiGerarLeveReserva3.json",
+      "tamanho": 127,
+      "sha256": "05df9c069ea9f316ef214dbf27f4073ce8430cc931adff8d39aca5eb3a2dd719"
+    },
+    {
+      "caminho": "funcoes/061-adegaGarantir.sql",
+      "tamanho": 115,
+      "sha256": "d295197fdfd8411e9fe03f5570c8d8f2b1a007274eb6c5549d48ba6d34fbb962"
+    },
+    {
+      "caminho": "funcoes/062-vinhoBuscarNome.js",
+      "tamanho": 5773,
+      "sha256": "5a193dad6a70b064d71fb048f2d7015eb9e340423d9c52409a13679bc332ef91"
+    },
+    {
+      "caminho": "funcoes/063-servicoContexto.sql",
+      "tamanho": 286,
+      "sha256": "fd1caeef41df48f04076251624ade0f017a27d8c0e261cc343493b37ee1a2412"
+    },
+    {
+      "caminho": "funcoes/064-servicoSalvar.sql",
+      "tamanho": 793,
+      "sha256": "35699a69a89e08f03f2db2e8d1414e553f1e1135d64add6d5a4b5c4a5029e4f3"
+    },
+    {
+      "caminho": "funcoes/065-servicoGerar.js",
+      "tamanho": 5058,
+      "sha256": "c150d83f87af29e04011ca7f6feb8e66c0578c424c51b1fad72f3e7e36f7812b"
+    },
+    {
+      "caminho": "funcoes/066-adegaRenomear.sql",
+      "tamanho": 193,
+      "sha256": "5253d9ad9f370f35fb95574fdf49ae8aac9ac1174c1912a57f7e3a16f8e9f9a3"
+    },
+    {
+      "caminho": "funcoes/067-preferenciasLer.sql",
+      "tamanho": 456,
+      "sha256": "6459159d41c51ffd0a192a2c75b6845d386dd102351b3f55bd31331be21a2899"
+    },
+    {
+      "caminho": "funcoes/068-preferenciasSalvar.sql",
+      "tamanho": 465,
+      "sha256": "d8cc973912cbb5c754a5c26ed0a677f46fbfdb128e9b10e71da33c41e5111aa7"
+    },
+    {
+      "caminho": "funcoes/069-estoqueSafras.sql",
+      "tamanho": 112,
+      "sha256": "e09d7d977a8de29f7ef24ae49cbff9ac0bbfd6b355873d053c3a33648d3925b5"
+    },
+    {
+      "caminho": "funcoes/070-pacoteUltimo.sql",
+      "tamanho": 142,
+      "sha256": "ce899cb7b374d1b3d917e0f47bcada110d415ec67d0a1f23674f4ddf6ecb9254"
+    },
+    {
+      "caminho": "funcoes/071-pacoteLink.js",
+      "tamanho": 2782,
+      "sha256": "821df8a0fb0ec78d2e131398e06c249b23bc10fe90f36fcfd3f19f8694df8a31"
+    },
+    {
+      "caminho": "funcoes/072-alertasConferir.sql",
+      "tamanho": 597,
+      "sha256": "6e59ac5e0ebad109972acd3e3af9420aa68d050445142acf70a5f6926e32fc52"
+    },
+    {
+      "caminho": "funcoes/073-gostoSalvar.sql",
+      "tamanho": 413,
+      "sha256": "c915e2d12aa943d77198035569b1c10dddc877213332635247ed549508e3e6bf"
+    },
+    {
+      "caminho": "funcoes/074-alertasEscolher.sql",
+      "tamanho": 425,
+      "sha256": "222bc0560abfe36c5099d6f7f383420d4b4eb05d60922504a30b4454d1338529"
+    },
+    {
+      "caminho": "funcoes/075-contaEu.sql",
+      "tamanho": 23,
+      "sha256": "56728c989b21730d627916f2fd3df07740b041c301bb5f09a3cf48b1f1e36c83"
+    },
+    {
+      "caminho": "funcoes/076-janelaSugerir.js",
+      "tamanho": 4799,
+      "sha256": "1f5345969d9de56af5df9fa29cf07eaf9643921e82cae5d3c719b7a2894b6dd4"
+    },
+    {
+      "caminho": "funcoes/077-alertaArquivar.sql",
+      "tamanho": 183,
+      "sha256": "771321d39a284fac484dafabf03edcaefd8a3fe5d3f3cdc72e6fa131f47258b0"
+    },
+    {
+      "caminho": "funcoes/080-pacoteCodigoPedir.js",
+      "tamanho": 5114,
+      "sha256": "f5cc1457a89fecd7e72f94566bf75fcca7ef22e402f5d15cfe5bfb0092062796"
+    },
+    {
+      "caminho": "funcoes/081-pacoteGerar.js",
+      "tamanho": 28112,
+      "sha256": "378f10e277c8bbfa320dcb105fe23435dea16a354a046f3a0c3d061207c50280"
+    },
+    {
+      "caminho": "funcoes/indice.json",
+      "tamanho": 31329,
+      "sha256": "6cb0c94060293eaf305c1ebd208767a2d6b94194e14cabd7c1bc1ee3815185f0"
+    },
+    {
+      "caminho": "plataforma/perfis-e-acessos.json",
+      "tamanho": 6089,
+      "sha256": "a3a6697f0a7dc9ea23f63a2f1c1f8408f0abe8e1b75d0e68b0fc49262c7548b8"
+    },
+    {
+      "caminho": "plataforma/usuarios.csv",
+      "tamanho": 408,
+      "sha256": "1940567616fea024785dfa5e8d760b9751ea0f7e63880efbf9c93e0a165ecba4"
+    },
+    {
+      "caminho": "plataforma/usuarios.json",
+      "tamanho": 830,
+      "sha256": "2e8535f41bc94cdee168866029725af4438b27bd2a95d6077c1a360303c09874"
+    },
+    {
+      "caminho": "README.md",
+      "tamanho": 1501,
+      "sha256": "522d084f2592884efccf7b81045461c830ae1ffb38109bd1fa222d02bf05d7b7"
+    }
+  ]
+}

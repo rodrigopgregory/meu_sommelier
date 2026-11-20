@@ -1,0 +1,1151 @@
+[
+  {
+    "numero": 1,
+    "nome": "geminiGerar",
+    "tipo": "INTEGRATION",
+    "tipoLegivel": "Integração (Google Gemini)",
+    "descricao": "Chamada ao Google Gemini (gemini-3.5-flash, chave principal). Uso interno de lerRotulo, vinhoBuscarNome e sommelierPerguntar.",
+    "parametros": [
+      "body"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T15:53:54",
+    "atualizadoEm": "2026-11-15T19:13:29",
+    "arquivo": "funcoes/001-geminiGerar.json"
+  },
+  {
+    "numero": 20,
+    "nome": "geminiGerarLeve",
+    "tipo": "INTEGRATION",
+    "tipoLegivel": "Integração (Google Gemini)",
+    "descricao": "Chamada ao Google Gemini (gemini-flash-latest, chave principal). Uso interno de lerRotulo, vinhoBuscarNome e sommelierPerguntar.",
+    "parametros": [
+      "body"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:08:54",
+    "atualizadoEm": "2026-11-15T19:13:29",
+    "arquivo": "funcoes/020-geminiGerarLeve.json"
+  },
+  {
+    "numero": 21,
+    "nome": "inicioResumo",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Início: totais, beber logo, alertas não lidos e garrafas por tipo da usuária logada",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:08:54",
+    "atualizadoEm": "2026-11-16T11:53:26",
+    "arquivo": "funcoes/021-inicioResumo.sql"
+  },
+  {
+    "numero": 22,
+    "nome": "dominios",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Listas para filtros e formulários: tipos de vinho, países e fontes da usuária",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:08:54",
+    "atualizadoEm": "2026-11-16T02:07:44",
+    "arquivo": "funcoes/022-dominios.sql"
+  },
+  {
+    "numero": 23,
+    "nome": "adegaListar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Lista paginada dos vinhos da usuária com busca (nome, produtor, uva, região) e filtros (tipoId, pais, status, ano da safra, uva, produtor)",
+    "parametros": [
+      "busca",
+      "tipoId",
+      "pais",
+      "ano",
+      "uva",
+      "produtor",
+      "status",
+      "limit",
+      "offset"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:08:54",
+    "atualizadoEm": "2026-11-16T12:57:24",
+    "arquivo": "funcoes/023-adegaListar.sql"
+  },
+  {
+    "numero": 24,
+    "nome": "vinhoFicha",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Ficha completa de um vinho da usuária: safras com estoque, janela, status, histórico, avaliações e indicadores",
+    "parametros": [
+      "id"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:08:54",
+    "atualizadoEm": "2026-11-16T12:57:46",
+    "arquivo": "funcoes/024-vinhoFicha.sql"
+  },
+  {
+    "numero": 25,
+    "nome": "vinhoProcurarIgual",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Procura vinho da usuária com o mesmo nome e produtor (aviso de duplicado)",
+    "parametros": [
+      "nome",
+      "produtor"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:14",
+    "atualizadoEm": "2026-11-16T12:57:46",
+    "arquivo": "funcoes/025-vinhoProcurarIgual.sql"
+  },
+  {
+    "numero": 26,
+    "nome": "vinhoCriar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Cria um vinho da usuária e, opcionalmente, a primeira safra (ano > 0) com a janela de consumo (inicio/auge/fim, 0 = sem) e a entrada inicial de garrafas",
+    "parametros": [
+      "nome",
+      "produtor",
+      "pais",
+      "regiao",
+      "uva",
+      "tipoId",
+      "fotoKey",
+      "notas",
+      "inicio",
+      "auge",
+      "fim",
+      "ano",
+      "quantidade",
+      "motivo",
+      "data"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:46",
+    "arquivo": "funcoes/026-vinhoCriar.sql"
+  },
+  {
+    "numero": 27,
+    "nome": "vinhoUltimo",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Id do último vinho criado pela usuária (depois de vinhoCriar)",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-15T16:09:15",
+    "arquivo": "funcoes/027-vinhoUltimo.sql"
+  },
+  {
+    "numero": 28,
+    "nome": "vinhoAtualizar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Atualiza os dados de um vinho da usuária (removerFoto = 1 tira a foto)",
+    "parametros": [
+      "nome",
+      "produtor",
+      "pais",
+      "regiao",
+      "uva",
+      "tipoId",
+      "notas",
+      "fotoKey",
+      "removerFoto",
+      "id"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:46",
+    "arquivo": "funcoes/028-vinhoAtualizar.sql"
+  },
+  {
+    "numero": 29,
+    "nome": "vinhoExcluir",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Exclui um vinho da usuária com safras, movimentações, avaliações e alertas",
+    "parametros": [
+      "id"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:46",
+    "arquivo": "funcoes/029-vinhoExcluir.sql"
+  },
+  {
+    "numero": 30,
+    "nome": "safraCriar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Adiciona uma safra (ano) a um vinho da usuária, com entrada inicial opcional",
+    "parametros": [
+      "ano",
+      "vinhoId",
+      "quantidade",
+      "motivo",
+      "data"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:46",
+    "arquivo": "funcoes/030-safraCriar.sql"
+  },
+  {
+    "numero": 31,
+    "nome": "safraExcluir",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Exclui uma safra da usuária com histórico, avaliações e alertas",
+    "parametros": [
+      "id"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:46",
+    "arquivo": "funcoes/031-safraExcluir.sql"
+  },
+  {
+    "numero": 32,
+    "nome": "safraJanela",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Grava a janela de consumo (anos início <= auge <= fim; tudo 0 limpa) de uma safra da usuária e atualiza os alertas",
+    "parametros": [
+      "inicio",
+      "auge",
+      "fim",
+      "safraId"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:46",
+    "arquivo": "funcoes/032-safraJanela.sql"
+  },
+  {
+    "numero": 33,
+    "nome": "movimentar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Entrada (E) ou baixa (S) de garrafas numa safra da usuária; baixa maior que o estoque não grava (affectedRows 0)",
+    "parametros": [
+      "tipo",
+      "quantidade",
+      "motivo",
+      "data",
+      "safraId"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:46",
+    "arquivo": "funcoes/033-movimentar.sql"
+  },
+  {
+    "numero": 34,
+    "nome": "avaliacaoPessoalCriar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Registra a avaliação pessoal (0 a 100) de uma safra da usuária",
+    "parametros": [
+      "nota",
+      "comentario",
+      "data",
+      "safraId"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:46",
+    "arquivo": "funcoes/034-avaliacaoPessoalCriar.sql"
+  },
+  {
+    "numero": 35,
+    "nome": "avaliacaoPessoalExcluir",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Exclui uma avaliação pessoal da usuária",
+    "parametros": [
+      "id"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:46",
+    "arquivo": "funcoes/035-avaliacaoPessoalExcluir.sql"
+  },
+  {
+    "numero": 36,
+    "nome": "avaliacaoExternaCriar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Registra à mão uma avaliação externa (escala 5 ou 100, tipo PROFISSIONAL ou COMUNIDADE) numa safra da usuária",
+    "parametros": [
+      "avaliador",
+      "nota",
+      "escala",
+      "tipo",
+      "data",
+      "url",
+      "fonteId",
+      "safraId"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:46",
+    "arquivo": "funcoes/036-avaliacaoExternaCriar.sql"
+  },
+  {
+    "numero": 37,
+    "nome": "avaliacaoExternaExcluir",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Exclui uma avaliação externa da usuária",
+    "parametros": [
+      "id"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:46",
+    "arquivo": "funcoes/037-avaliacaoExternaExcluir.sql"
+  },
+  {
+    "numero": 38,
+    "nome": "fontesListar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Fontes de referência da usuária, com quantas avaliações usam cada uma",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-15T16:09:15",
+    "arquivo": "funcoes/038-fontesListar.sql"
+  },
+  {
+    "numero": 39,
+    "nome": "fonteSalvar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Cria (id 0) ou altera uma fonte da usuária; categoria PROFISSIONAL, COMUNIDADE ou OUTRA",
+    "parametros": [
+      "nome",
+      "categoria",
+      "url",
+      "condicoes",
+      "id"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:46",
+    "arquivo": "funcoes/039-fonteSalvar.sql"
+  },
+  {
+    "numero": 40,
+    "nome": "fonteExcluir",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Exclui uma fonte da usuária; as avaliações ficam, sem fonte, com o nome e a URL originais",
+    "parametros": [
+      "id"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:47",
+    "arquivo": "funcoes/040-fonteExcluir.sql"
+  },
+  {
+    "numero": 41,
+    "nome": "alertasListar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Alertas da usuária, com filtro por tipo (INICIO, AUGE, SAINDO), lido (vazio, 0 ou 1) e arquivado (0 = lista normal, 1 = Arquivados), paginados",
+    "parametros": [
+      "tipo",
+      "lido",
+      "arquivado",
+      "limit",
+      "offset"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:47",
+    "arquivo": "funcoes/041-alertasListar.sql"
+  },
+  {
+    "numero": 42,
+    "nome": "alertasContar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Quantos alertas não lidos e não arquivados a usuária tem",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T11:53:52",
+    "arquivo": "funcoes/042-alertasContar.sql"
+  },
+  {
+    "numero": 43,
+    "nome": "alertaMarcarLido",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Marca um alerta da usuária como lido (lido 1, padrão) ou não lido (lido 0); o alerta continua na lista",
+    "parametros": [
+      "lido",
+      "id"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:47",
+    "arquivo": "funcoes/043-alertaMarcarLido.sql"
+  },
+  {
+    "numero": 44,
+    "nome": "alertasMarcarTodos",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Marca todos os alertas não arquivados da usuária como lidos",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T11:53:52",
+    "arquivo": "funcoes/044-alertasMarcarTodos.sql"
+  },
+  {
+    "numero": 45,
+    "nome": "alertasRotina",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Rotina diária (agendada): gera os alertas de janela de todas as adegas. Não vai para perfil.",
+    "parametros": [],
+    "usaVarUser": false,
+    "agendamento": "0 0 6 * * *",
+    "perfis": [],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T06:00:52",
+    "arquivo": "funcoes/045-alertasRotina.sql"
+  },
+  {
+    "numero": 46,
+    "nome": "exportarTudo",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Tudo da usuária para a planilha: vinhos, safras, movimentações, avaliações, fontes e alertas",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T11:53:52",
+    "arquivo": "funcoes/046-exportarTudo.sql"
+  },
+  {
+    "numero": 47,
+    "nome": "fotoKeys",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Chaves das fotos dos vinhos da usuária (ids separados por vírgula); uso interno de fotosLinks",
+    "parametros": [
+      "ids"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:47",
+    "arquivo": "funcoes/047-fotoKeys.sql"
+  },
+  {
+    "numero": 48,
+    "nome": "sommelierContexto",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Uso interno do sommelier: garrafas com estoque da usuária e as últimas mensagens",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T02:56",
+    "arquivo": "funcoes/048-sommelierContexto.sql"
+  },
+  {
+    "numero": 49,
+    "nome": "sommelierGravar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Uso interno do sommelier: grava a pergunta e a resposta da usuária e mantém as últimas 200 mensagens",
+    "parametros": [
+      "pergunta",
+      "viaAudio",
+      "resposta",
+      "sugestoes"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T12:57:47",
+    "arquivo": "funcoes/049-sommelierGravar.sql"
+  },
+  {
+    "numero": 50,
+    "nome": "sommelierHistorico",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Conversa da usuária com o sommelier (últimas 60 mensagens)",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-15T16:09:15",
+    "arquivo": "funcoes/050-sommelierHistorico.sql"
+  },
+  {
+    "numero": 51,
+    "nome": "sommelierApagar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Apaga toda a conversa da usuária com o sommelier",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-15T16:09:15",
+    "arquivo": "funcoes/051-sommelierApagar.sql"
+  },
+  {
+    "numero": 52,
+    "nome": "fotosLinks",
+    "tipo": "JAVASCRIPT",
+    "tipoLegivel": "JavaScript",
+    "descricao": "Links temporários das fotos dos vinhos da usuária (ids separados por vírgula)",
+    "parametros": [
+      "ids"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-15T16:31:48",
+    "arquivo": "funcoes/052-fotosLinks.js"
+  },
+  {
+    "numero": 53,
+    "nome": "lerRotulo",
+    "tipo": "JAVASCRIPT",
+    "tipoLegivel": "JavaScript",
+    "descricao": "Lê a foto do rótulo (key de arquivo privado) com o Gemini e devolve sugestões de campos; não grava nada",
+    "parametros": [
+      "fotoKey",
+      "mime"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T10:24:59",
+    "arquivo": "funcoes/053-lerRotulo.js"
+  },
+  {
+    "numero": 54,
+    "nome": "sommelierPerguntar",
+    "tipo": "JAVASCRIPT",
+    "tipoLegivel": "JavaScript",
+    "descricao": "Sommelier virtual: recebe texto ou áudio (key de arquivo privado WAV), responde perguntas sobre vinho e indica até 3 garrafas da adega da usuária ou o tipo de vinho a comprar. Não altera a adega.",
+    "parametros": [
+      "texto",
+      "audioKey"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:09:15",
+    "atualizadoEm": "2026-11-16T04:07:48",
+    "arquivo": "funcoes/054-sommelierPerguntar.js"
+  },
+  {
+    "numero": 55,
+    "nome": "geminiGerarReserva1",
+    "tipo": "INTEGRATION",
+    "tipoLegivel": "Integração (Google Gemini)",
+    "descricao": "Chamada ao Google Gemini (gemini-3.5-flash, chave de reserva 1). Uso interno de lerRotulo, vinhoBuscarNome e sommelierPerguntar.",
+    "parametros": [
+      "body"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:31:24",
+    "atualizadoEm": "2026-11-15T19:13:29",
+    "arquivo": "funcoes/055-geminiGerarReserva1.json"
+  },
+  {
+    "numero": 56,
+    "nome": "geminiGerarReserva2",
+    "tipo": "INTEGRATION",
+    "tipoLegivel": "Integração (Google Gemini)",
+    "descricao": "Chamada ao Google Gemini (gemini-3.5-flash, chave de reserva 2). Uso interno de lerRotulo, vinhoBuscarNome e sommelierPerguntar.",
+    "parametros": [
+      "body"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:31:24",
+    "atualizadoEm": "2026-11-15T19:13:29",
+    "arquivo": "funcoes/056-geminiGerarReserva2.json"
+  },
+  {
+    "numero": 57,
+    "nome": "geminiGerarReserva3",
+    "tipo": "INTEGRATION",
+    "tipoLegivel": "Integração (Google Gemini)",
+    "descricao": "Chamada ao Google Gemini (gemini-3.5-flash, chave de reserva 3). Uso interno de lerRotulo, vinhoBuscarNome e sommelierPerguntar.",
+    "parametros": [
+      "body"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:31:24",
+    "atualizadoEm": "2026-11-15T19:13:29",
+    "arquivo": "funcoes/057-geminiGerarReserva3.json"
+  },
+  {
+    "numero": 58,
+    "nome": "geminiGerarLeveReserva1",
+    "tipo": "INTEGRATION",
+    "tipoLegivel": "Integração (Google Gemini)",
+    "descricao": "Chamada ao Google Gemini (gemini-flash-latest, chave de reserva 1). Uso interno de lerRotulo, vinhoBuscarNome e sommelierPerguntar.",
+    "parametros": [
+      "body"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:31:24",
+    "atualizadoEm": "2026-11-15T19:13:29",
+    "arquivo": "funcoes/058-geminiGerarLeveReserva1.json"
+  },
+  {
+    "numero": 59,
+    "nome": "geminiGerarLeveReserva2",
+    "tipo": "INTEGRATION",
+    "tipoLegivel": "Integração (Google Gemini)",
+    "descricao": "Chamada ao Google Gemini (gemini-flash-latest, chave de reserva 2). Uso interno de lerRotulo, vinhoBuscarNome e sommelierPerguntar.",
+    "parametros": [
+      "body"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:31:24",
+    "atualizadoEm": "2026-11-15T19:13:29",
+    "arquivo": "funcoes/059-geminiGerarLeveReserva2.json"
+  },
+  {
+    "numero": 60,
+    "nome": "geminiGerarLeveReserva3",
+    "tipo": "INTEGRATION",
+    "tipoLegivel": "Integração (Google Gemini)",
+    "descricao": "Chamada ao Google Gemini (gemini-flash-latest, chave de reserva 3). Uso interno de lerRotulo, vinhoBuscarNome e sommelierPerguntar.",
+    "parametros": [
+      "body"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:31:24",
+    "atualizadoEm": "2026-11-15T19:13:29",
+    "arquivo": "funcoes/060-geminiGerarLeveReserva3.json"
+  },
+  {
+    "numero": 61,
+    "nome": "adegaGarantir",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Primeiro acesso: cria a adega vazia da usuária logada (não muda nada se já existir)",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T16:36:24",
+    "atualizadoEm": "2026-11-15T16:36:24",
+    "arquivo": "funcoes/061-adegaGarantir.sql"
+  },
+  {
+    "numero": 62,
+    "nome": "vinhoBuscarNome",
+    "tipo": "JAVASCRIPT",
+    "tipoLegivel": "JavaScript",
+    "descricao": "Procura um vinho pelo nome digitado ou falado (audioKey de WAV privado) com o Gemini e devolve sugestões de campos para revisar; não grava nada",
+    "parametros": [
+      "nome",
+      "audioKey"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-15T19:13:52",
+    "atualizadoEm": "2026-11-16T10:24:59",
+    "arquivo": "funcoes/062-vinhoBuscarNome.js"
+  },
+  {
+    "numero": 63,
+    "nome": "servicoContexto",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Uso interno de servicoGerar: dados do vinho e da safra da usuária para as instruções de serviço",
+    "parametros": [
+      "safraId"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T02:15:04",
+    "atualizadoEm": "2026-11-16T12:57:47",
+    "arquivo": "funcoes/063-servicoContexto.sql"
+  },
+  {
+    "numero": 64,
+    "nome": "servicoSalvar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Grava as instruções de serviço (temperatura, decantação, abertura, taça, depois de aberto) de uma safra da usuária; origem IA ou MANUAL",
+    "parametros": [
+      "temperatura",
+      "decantacao",
+      "abertura",
+      "taca",
+      "depoisAberto",
+      "origem",
+      "safraId"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T02:15:05",
+    "atualizadoEm": "2026-11-16T12:57:47",
+    "arquivo": "funcoes/064-servicoSalvar.sql"
+  },
+  {
+    "numero": 65,
+    "nome": "servicoGerar",
+    "tipo": "JAVASCRIPT",
+    "tipoLegivel": "JavaScript",
+    "descricao": "Gera com o Gemini e grava as instruções de serviço (temperatura, decantação, abertura, taça, depois de aberto) de uma safra da usuária",
+    "parametros": [
+      "safraId"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T02:15:05",
+    "atualizadoEm": "2026-11-16T02:15:05",
+    "arquivo": "funcoes/065-servicoGerar.js"
+  },
+  {
+    "numero": 66,
+    "nome": "adegaRenomear",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Troca o nome da adega da usuária logada (1 a 120 letras)",
+    "parametros": [
+      "nome"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T02:32:11",
+    "atualizadoEm": "2026-11-16T12:57:24",
+    "arquivo": "funcoes/066-adegaRenomear.sql"
+  },
+  {
+    "numero": 67,
+    "nome": "preferenciasLer",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Preferências da usuária logada: temperatura, escala de nota, país, tipos favoritos, gosto livre e quais alertas quer ver",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T02:55:35",
+    "atualizadoEm": "2026-11-16T05:45:09",
+    "arquivo": "funcoes/067-preferenciasLer.sql"
+  },
+  {
+    "numero": 68,
+    "nome": "preferenciasSalvar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Grava as preferências da usuária logada: temperatura C ou F, escala de nota 100 ou 5 e país (até 80 letras)",
+    "parametros": [
+      "temperatura",
+      "escala",
+      "pais"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T02:55:35",
+    "atualizadoEm": "2026-11-16T12:57:24",
+    "arquivo": "funcoes/068-preferenciasSalvar.sql"
+  },
+  {
+    "numero": 69,
+    "nome": "estoqueSafras",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Estoque atual de safras da usuária (ids separados por vírgula), para as sugestões do sommelier",
+    "parametros": [
+      "ids"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T02:55:36",
+    "atualizadoEm": "2026-11-16T12:57:24",
+    "arquivo": "funcoes/069-estoqueSafras.sql"
+  },
+  {
+    "numero": 70,
+    "nome": "pacoteUltimo",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Último pacote completo do app liberado para o usuário logado (só desenvolvedores do projeto); uso interno de pacoteLink",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T03:29:57",
+    "atualizadoEm": "2026-11-16T11:47:10",
+    "arquivo": "funcoes/070-pacoteUltimo.sql"
+  },
+  {
+    "numero": 71,
+    "nome": "pacoteLink",
+    "tipo": "JAVASCRIPT",
+    "tipoLegivel": "JavaScript",
+    "descricao": "Link temporário (1 h) do último pacote completo do app (código, histórico, banco em SQL e CSV, fotos, Server Functions, dependências do Mitra, acessos e avisos). Com soInfo, só a data e a versão do app do pacote, sem link. Só para desenvolvedores do projeto.",
+    "parametros": [
+      "soInfo"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T03:29:57",
+    "atualizadoEm": "2026-11-16T11:47:10",
+    "arquivo": "funcoes/071-pacoteLink.js"
+  },
+  {
+    "numero": 72,
+    "nome": "alertasConferir",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Ao abrir o app: gera os alertas de janela que faltam na adega da usuária logada",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T04:56",
+    "atualizadoEm": "2026-11-16T04:56",
+    "arquivo": "funcoes/072-alertasConferir.sql"
+  },
+  {
+    "numero": 73,
+    "nome": "gostoSalvar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Grava os tipos de vinho favoritos (ids de 1 a 7 separados por vírgula) e o gosto em texto livre (até 500 letras) da usuária logada",
+    "parametros": [
+      "tipos",
+      "gosto"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T05:45:09",
+    "atualizadoEm": "2026-11-16T12:57:24",
+    "arquivo": "funcoes/073-gostoSalvar.sql"
+  },
+  {
+    "numero": 74,
+    "nome": "alertasEscolher",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Grava quais tipos de alerta a usuária logada quer ver (inicio, auge, saindo: 1 ou 0)",
+    "parametros": [
+      "inicio",
+      "auge",
+      "saindo"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T05:45:09",
+    "atualizadoEm": "2026-11-16T12:57:24",
+    "arquivo": "funcoes/074-alertasEscolher.sql"
+  },
+  {
+    "numero": 75,
+    "nome": "contaEu",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Id da usuária logada; uso interno de contaInfo",
+    "parametros": [],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T05:45:09",
+    "atualizadoEm": "2026-11-16T05:45:09",
+    "arquivo": "funcoes/075-contaEu.sql"
+  },
+  {
+    "numero": 76,
+    "nome": "janelaSugerir",
+    "tipo": "JAVASCRIPT",
+    "tipoLegivel": "JavaScript",
+    "descricao": "Sommelier sugere a janela de consumo (início, auge, fim) de um vinho e safra informados. Não grava nada.",
+    "parametros": [
+      "nome",
+      "ano",
+      "produtor",
+      "tipoId",
+      "uva",
+      "regiao",
+      "pais"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T05:45:33",
+    "atualizadoEm": "2026-11-16T05:45:33",
+    "arquivo": "funcoes/076-janelaSugerir.js"
+  },
+  {
+    "numero": 77,
+    "nome": "alertaArquivar",
+    "tipo": "SQL",
+    "tipoLegivel": "SQL",
+    "descricao": "Arquiva (arquivado 1) ou desarquiva (arquivado 0) um alerta da usuária",
+    "parametros": [
+      "arquivado",
+      "id"
+    ],
+    "usaVarUser": true,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T11:53:52",
+    "atualizadoEm": "2026-11-16T12:57:47",
+    "arquivo": "funcoes/077-alertaArquivar.sql"
+  },
+  {
+    "numero": 80,
+    "nome": "pacoteCodigoPedir",
+    "tipo": "JAVASCRIPT",
+    "tipoLegivel": "JavaScript",
+    "descricao": "Envia para o e-mail do dono do app (rodrigogregory@hotmail.com, usuário 9) um código de 6 números (10 min, uso único) para gerar o pacote completo na hora; registra o pedido em PACOTE_EXPORTACOES. Outras contas recebem recusa.",
+    "parametros": [],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T12:31:38",
+    "atualizadoEm": "2026-11-16T12:57:47",
+    "arquivo": "funcoes/080-pacoteCodigoPedir.js"
+  },
+  {
+    "numero": 81,
+    "nome": "pacoteGerar",
+    "tipo": "JAVASCRIPT",
+    "tipoLegivel": "JavaScript",
+    "descricao": "Gera o pacote completo NA HORA (banco, dados, CSV, fotos, usuários, manifesto e avisos gerados agora; código e funções do último pacote montado), só para o dono do app e com o código do e-mail; devolve o zip e registra em PACOTE_EXPORTACOES.",
+    "parametros": [
+      "codigo",
+      "versaoApp"
+    ],
+    "usaVarUser": false,
+    "agendamento": null,
+    "perfis": [
+      "Usuária"
+    ],
+    "criadoEm": "2026-11-16T12:31:38",
+    "atualizadoEm": "2026-11-16T12:57:47",
+    "arquivo": "funcoes/081-pacoteGerar.js"
+  }
+]

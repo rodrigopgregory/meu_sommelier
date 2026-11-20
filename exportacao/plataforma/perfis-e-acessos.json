@@ -1,0 +1,330 @@
+[
+  {
+    "id": -999,
+    "nome": "Desenvolvedores (perfil interno do Mitra)",
+    "usuarios": [
+      {
+        "id": 7,
+        "userId": 7,
+        "name": "Rodrigo Gregory",
+        "email": "sledt1006p01@imersao.mitralab.io",
+        "username": "sledt1006p01@imersao.mitralab.io"
+      },
+      {
+        "id": 8,
+        "userId": 8,
+        "name": "Felipe",
+        "email": "felipe.silva@mitralab.io",
+        "username": "felipe.silva@mitralab.io"
+      }
+    ],
+    "tabelasLeitura": [],
+    "tabelasEscrita": [],
+    "acoes": [],
+    "telas": [],
+    "serverFunctions": []
+  },
+  {
+    "id": 1,
+    "nome": "Usuária",
+    "usuarios": [],
+    "tabelasLeitura": [],
+    "tabelasEscrita": [],
+    "acoes": [],
+    "telas": [],
+    "serverFunctions": [
+      {
+        "numero": 1,
+        "nome": "geminiGerar"
+      },
+      {
+        "numero": 20,
+        "nome": "geminiGerarLeve"
+      },
+      {
+        "numero": 21,
+        "nome": "inicioResumo"
+      },
+      {
+        "numero": 22,
+        "nome": "dominios"
+      },
+      {
+        "numero": 23,
+        "nome": "adegaListar"
+      },
+      {
+        "numero": 24,
+        "nome": "vinhoFicha"
+      },
+      {
+        "numero": 25,
+        "nome": "vinhoProcurarIgual"
+      },
+      {
+        "numero": 26,
+        "nome": "vinhoCriar"
+      },
+      {
+        "numero": 27,
+        "nome": "vinhoUltimo"
+      },
+      {
+        "numero": 28,
+        "nome": "vinhoAtualizar"
+      },
+      {
+        "numero": 29,
+        "nome": "vinhoExcluir"
+      },
+      {
+        "numero": 30,
+        "nome": "safraCriar"
+      },
+      {
+        "numero": 31,
+        "nome": "safraExcluir"
+      },
+      {
+        "numero": 32,
+        "nome": "safraJanela"
+      },
+      {
+        "numero": 33,
+        "nome": "movimentar"
+      },
+      {
+        "numero": 34,
+        "nome": "avaliacaoPessoalCriar"
+      },
+      {
+        "numero": 35,
+        "nome": "avaliacaoPessoalExcluir"
+      },
+      {
+        "numero": 36,
+        "nome": "avaliacaoExternaCriar"
+      },
+      {
+        "numero": 37,
+        "nome": "avaliacaoExternaExcluir"
+      },
+      {
+        "numero": 38,
+        "nome": "fontesListar"
+      },
+      {
+        "numero": 39,
+        "nome": "fonteSalvar"
+      },
+      {
+        "numero": 40,
+        "nome": "fonteExcluir"
+      },
+      {
+        "numero": 41,
+        "nome": "alertasListar"
+      },
+      {
+        "numero": 42,
+        "nome": "alertasContar"
+      },
+      {
+        "numero": 43,
+        "nome": "alertaMarcarLido"
+      },
+      {
+        "numero": 44,
+        "nome": "alertasMarcarTodos"
+      },
+      {
+        "numero": 46,
+        "nome": "exportarTudo"
+      },
+      {
+        "numero": 47,
+        "nome": "fotoKeys"
+      },
+      {
+        "numero": 48,
+        "nome": "sommelierContexto"
+      },
+      {
+        "numero": 49,
+        "nome": "sommelierGravar"
+      },
+      {
+        "numero": 50,
+        "nome": "sommelierHistorico"
+      },
+      {
+        "numero": 51,
+        "nome": "sommelierApagar"
+      },
+      {
+        "numero": 52,
+        "nome": "fotosLinks"
+      },
+      {
+        "numero": 53,
+        "nome": "lerRotulo"
+      },
+      {
+        "numero": 54,
+        "nome": "sommelierPerguntar"
+      },
+      {
+        "numero": 55,
+        "nome": "geminiGerarReserva1"
+      },
+      {
+        "numero": 56,
+        "nome": "geminiGerarReserva2"
+      },
+      {
+        "numero": 57,
+        "nome": "geminiGerarReserva3"
+      },
+      {
+        "numero": 58,
+        "nome": "geminiGerarLeveReserva1"
+      },
+      {
+        "numero": 59,
+        "nome": "geminiGerarLeveReserva2"
+      },
+      {
+        "numero": 60,
+        "nome": "geminiGerarLeveReserva3"
+      },
+      {
+        "numero": 61,
+        "nome": "adegaGarantir"
+      },
+      {
+        "numero": 62,
+        "nome": "vinhoBuscarNome"
+      },
+      {
+        "numero": 63,
+        "nome": "servicoContexto"
+      },
+      {
+        "numero": 64,
+        "nome": "servicoSalvar"
+      },
+      {
+        "numero": 65,
+        "nome": "servicoGerar"
+      },
+      {
+        "numero": 66,
+        "nome": "adegaRenomear"
+      },
+      {
+        "numero": 67,
+        "nome": "preferenciasLer"
+      },
+      {
+        "numero": 68,
+        "nome": "preferenciasSalvar"
+      },
+      {
+        "numero": 69,
+        "nome": "estoqueSafras"
+      },
+      {
+        "numero": 70,
+        "nome": "pacoteUltimo"
+      },
+      {
+        "numero": 71,
+        "nome": "pacoteLink"
+      },
+      {
+        "numero": 72,
+        "nome": "alertasConferir"
+      },
+      {
+        "numero": 73,
+        "nome": "gostoSalvar"
+      },
+      {
+        "numero": 74,
+        "nome": "alertasEscolher"
+      },
+      {
+        "numero": 75,
+        "nome": "contaEu"
+      },
+      {
+        "numero": 76,
+        "nome": "janelaSugerir"
+      },
+      {
+        "numero": 77,
+        "nome": "alertaArquivar"
+      },
+      {
+        "numero": 80,
+        "nome": "pacoteCodigoPedir"
+      },
+      {
+        "numero": 81,
+        "nome": "pacoteGerar"
+      },
+      {
+        "numero": 82,
+        "nome": "safraCriarComJanela"
+      },
+      {
+        "numero": 83,
+        "nome": "vinhoPesquisar"
+      },
+      {
+        "numero": 84,
+        "nome": "geminiGerarReserva4"
+      },
+      {
+        "numero": 85,
+        "nome": "geminiGerarLeveReserva4"
+      },
+      {
+        "numero": 86,
+        "nome": "geminiGerarReserva5"
+      },
+      {
+        "numero": 87,
+        "nome": "geminiGerarReserva6"
+      },
+      {
+        "numero": 88,
+        "nome": "geminiGerarLeveReserva5"
+      },
+      {
+        "numero": 89,
+        "nome": "geminiGerarLeveReserva6"
+      },
+      {
+        "numero": 90,
+        "nome": "exportarGerar"
+      },
+      {
+        "numero": 91,
+        "nome": "exportarGit"
+      },
+      {
+        "numero": 92,
+        "nome": "exportarIniciar"
+      },
+      {
+        "numero": 93,
+        "nome": "exportarEstado"
+      },
+      {
+        "numero": 94,
+        "nome": "exportarLink"
+      }
+    ]
+  }
+]

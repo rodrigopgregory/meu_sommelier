@@ -1,0 +1,36 @@
+[
+  {
+    "id": 7,
+    "nome": "Rodrigo Gregory",
+    "email": "sledt1006p01@imersao.mitralab.io",
+    "tipo": "desenvolvedor",
+    "grupoNoMitra": "Merge Group",
+    "ativo": true,
+    "perfisDoApp": [
+      "Desenvolvedores (perfil interno do Mitra)"
+    ],
+    "criadoEm": "2026-11-15T12:43:25"
+  },
+  {
+    "id": 8,
+    "nome": "Felipe",
+    "email": "felipe.silva@mitralab.io",
+    "tipo": "desenvolvedor",
+    "grupoNoMitra": "Merge Group",
+    "ativo": true,
+    "perfisDoApp": [
+      "Desenvolvedores (perfil interno do Mitra)"
+    ],
+    "criadoEm": "2026-11-15T12:43:25"
+  },
+  {
+    "id": 9,
+    "nome": "Rodrigo Gregory",
+    "email": "rodrigogregory@hotmail.com",
+    "tipo": "usuário do app",
+    "grupoNoMitra": "Merge Group",
+    "ativo": true,
+    "perfisDoApp": [],
+    "criadoEm": "2026-11-16T02:16:27"
+  }
+]

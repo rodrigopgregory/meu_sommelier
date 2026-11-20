@@ -1,0 +1,3 @@
+INSERT INTO AVALIACOES_PESSOAIS (SAFRA_ID, NOTA, COMENTARIO, DATA)
+SELECT s.ID, {{nota}}, NULLIF('{{comentario}}', ''), '{{data}}' FROM SAFRAS s JOIN VINHOS v ON v.ID = s.VINHO_ID
+WHERE s.ID = {{safraId}} AND v.USUARIO_ID = :VAR_USER AND {{nota}} BETWEEN 0 AND 100 AND '{{data}}' REGEXP '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'

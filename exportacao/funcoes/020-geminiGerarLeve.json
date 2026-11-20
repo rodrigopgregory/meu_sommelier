@@ -1,0 +1,1 @@
+{"connection":"gemini-sommelier","method":"POST","endpoint":"/models/gemini-flash-latest:generateContent","body":"event.body"}

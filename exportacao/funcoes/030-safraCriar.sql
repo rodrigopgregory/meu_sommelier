@@ -1,0 +1,6 @@
+INSERT INTO SAFRAS (VINHO_ID, ANO, CRIADO_EM)
+SELECT v.ID, {{ano}}, DATE_FORMAT(NOW(), '%Y-%m-%dT%H:%i:%s') FROM VINHOS v WHERE v.ID = {{vinhoId}} AND v.USUARIO_ID = :VAR_USER AND {{ano}} BETWEEN 1900 AND 2100;
+SET @safra = IF(ROW_COUNT() > 0, LAST_INSERT_ID(), NULL);
+INSERT INTO MOVIMENTACOES (SAFRA_ID, TIPO, QUANTIDADE, MOTIVO, DATA, CRIADO_EM)
+SELECT @safra, 'E', {{quantidade}}, LEFT('{{motivo}}', 40), '{{data}}', DATE_FORMAT(NOW(), '%Y-%m-%dT%H:%i:%s') FROM DUAL
+WHERE @safra IS NOT NULL AND {{quantidade}} BETWEEN 1 AND 10000 AND '{{data}}' REGEXP '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'

@@ -1,0 +1,1 @@
+{"connection":"gemini-reserva-3","method":"POST","endpoint":"/models/gemini-3.5-flash:generateContent","body":"event.body"}
